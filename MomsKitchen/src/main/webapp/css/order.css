@@ -1,0 +1,433 @@
+html{
+	box-sizing: border-box;
+}
+*{
+	box-sizing: inherit;
+}
+body{
+	font-family: Verdana, Arial, serif;
+	font-size: 100%;
+	background-color: white;
+	margin: 0;
+}
+a:link, a:visited{
+	color: #DC6903;
+}
+a:focus, a:hover, a:active{
+	color: #F9AB33;
+}
+a{
+	text-decoration: none;
+}
+header{
+	color: white;
+	text-align: center; 
+}
+header img{
+	width: 200px;
+	height: 300px;
+	margin-top: 1em;
+	border-radius: 2em;
+}
+nav, footer{
+	font-family: verdana, sans-serif;
+	background-color: #783F27;
+}
+nav ul li a:link, nav ul li a:visited{
+	color: #F9AB33;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active{
+	color: #fff;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+nav ul li{
+    font-size: 0.88em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	flex: 1 1 50%;
+}
+nav ul li a{
+	display: block;
+	border: 1px solid;
+	border-radius: 0.5em;
+	padding: 0.5em 1em;
+	margin: 0.25em;
+}
+main{
+	font-size: 1em;
+	color: #555;
+	margin: 2.5%;
+	line-height: 1.8em;
+    padding: 1em;
+    border: double 4px #783F27;
+    border-radius: 25px;
+}
+h2 {
+  font-family: 'Stint Ultra Expanded', Georgia, serif;
+  font-weight: bold;
+  font-size: 2em;
+}
+h3 {
+  font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: #7A0002;
+  border-top: 1px solid;
+  margin-top: 1.8em;
+}
+p{
+  font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+}
+footer {
+  color: #EADDC4;
+  text-align: center;
+  font-size: .8em;
+  padding: 1em;
+}
+#form{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+#container{
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #f3f3f5;
+}
+input[id=firstname]{
+	width: 70%;
+	height: 25px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[id=lastname]{
+	width: 70%;
+	height: 25px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[id=email]{
+	width: 90%;
+	height: 25px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[id=number]{
+	width: 40px;
+	height: 25px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[id=number1]{
+	width: 200px;
+	height: 25px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[id=address]{
+	width: 95%;
+	height: 25px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[id=address2]{
+	width: 95%;
+	height: 25px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[id=city]{
+	width: 60%;
+	height: 25px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[id=state]{
+	width: 60%;
+	height: 25px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[id=zipcode]{
+	width: 60%;
+	height: 25px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[id=date]{
+	width: 50%;
+	height: 30px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[id=time]{
+	width: 50%;
+	height: 30px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+textarea[id=details]{
+	width: 95%;
+	height: 200px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[id=serve]{
+	width: 30%;
+	height: 30px;
+	font-size: 1.1em;
+	font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+	font-weight: bold;
+	font-weight: bold;
+	box-shadow: 1px 1px 9px black;
+}
+input[type=submit]{
+	display: block;
+	width: 200px;
+	height: 40px;
+	margin: 3em auto;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: 'Akaya Telivigala', cursive;
+	background-color: #783F27;
+	color: white;
+	border-radius: 1em;
+	font-weight: bold;
+	box-shadow: 5px 5px 9px black;
+}
+#note{
+	border: solid 2px blue;
+	border-radius: 20px;
+	padding: 0.5em;
+	color: black;
+	font-weight: bold;
+}
+#order{
+	cursor: pointer;
+}
+@media screen and (min-width:550px){
+	nav ul li{
+		flex: none;
+	}
+	nav ul{
+		justify-content: center;
+	}
+	input[id=firstname]{
+	width: 300px;
+}
+    input[id=lastname]{
+	width: 300px;
+}
+input[id=number1]{
+	width: 300px;
+}
+input[id=email]{
+	width: 400px;
+}
+input[id=number]{
+	width: 60px;
+}
+input[id=address]{
+	width: 450px;
+}
+input[id=address2]{
+	width: 450px;
+}
+input[id=city]{
+	width: 250px;
+}
+input[id=state]{
+	width: 250px;
+}
+input[id=zipcode]{
+	width: 250px;
+}
+input[id=date]{
+	width: 200px;
+}
+input[id=time]{
+	width: 200px;
+}
+textarea[id=details]{
+	width: 450px;
+}
+input[id=serve]{
+	width: 100px;
+}
+}
+@media screen and (min-width:600px){
+	input[id=firstname]{
+	width: 300px;
+}
+   input[id=lastname]{
+	width: 300px;
+}
+input[id=email]{
+	width: 450px;
+}
+input[id=number]{
+	width: 70px;
+}
+input[id=number1]{
+	width: 350px;
+}
+input[id=address]{
+	width: 500px;
+}
+input[id=address2]{
+	width: 500px;
+}
+input[id=city]{
+	width: 250px;
+}
+input[id=state]{
+	width: 250px;
+}
+input[id=zipcode]{
+	width: 250px;
+}
+input[id=date]{
+	width: 200px;
+}
+input[id=time]{
+	width: 200px;
+}
+textarea[id=details]{
+	width: 500px;
+}
+input[id=serve]{
+	width: 100px;
+}
+}
+@media screen and (min-width:700px){
+	input[id=firstname]{
+	width: 400px;
+}
+   input[id=lastname]{
+	width: 400px;
+}
+input[id=email]{
+	width: 550px;
+}
+input[id=number]{
+	width: 80px;
+}
+input[id=number1]{
+	width: 400px;
+}
+input[id=address]{
+	width: 600px;
+}
+input[id=address2]{
+	width: 600px;
+}
+input[id=city]{
+	width: 300px;
+}
+input[id=state]{
+	width: 300px;
+}
+input[id=zipcode]{
+	width: 300px;
+}
+input[id=date]{
+	width: 250px;
+}
+input[id=time]{
+	width: 250px;
+}
+textarea[id=details]{
+	width: 600px;
+}
+input[id=serve]{
+	width: 150px;
+}
+}
+@media screen and (min-width:940px){
+input[id=firstname]{
+	width: 400px;
+} 
+   input[id=lastname]{
+	width: 400px;
+}
+input[id=email]{
+	width: 550px;
+}
+input[id=number]{
+	width: 100px;
+}
+input[id=number1]{
+	width: 400px;
+}
+input[id=address]{
+	width: 800px;
+}
+input[id=address2]{
+	width: 800px;
+}
+input[id=city]{
+	width: 300px;
+}
+input[id=state]{
+	width: 300px;
+}
+input[id=zipcode]{
+	width: 300px;
+}
+input[id=date]{
+	width: 250px;
+}
+input[id=time]{
+	width: 250px;
+}
+textarea[id=details]{
+	width: 800px;
+}
+input[id=serve]{
+	width: 150px;
+}
+}

@@ -1,0 +1,255 @@
+@ charset "UTF-8";
+html{
+	box-sizing: border-box;
+}
+*{
+	box-sizing: inherit;
+}
+body{
+	font-family: Verdana, Arial, serif;
+	font-size: 100%;
+	background-color: white;
+	margin: 0;
+}
+a:link, a:visited{
+	color: #DC6903;
+}
+a:focus, a:hover, a:active{
+	color: #F9AB33;
+}
+a{
+	text-decoration: none;
+}
+header{
+	color: white;
+	text-align: center;
+}
+nav, footer{
+	font-family: verdana, sans-serif;
+	background-color: #783F27;
+}
+nav ul li a:link, nav ul li a:visited{
+	color: #F9AB33;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active{
+	color: #fff;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+nav ul li{
+    font-size: 0.88em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	flex: 1 1 50%;
+}
+nav ul li a{
+	display: block;
+	border: 1px solid;
+	border-radius: 0.5em;
+	padding: 0.5em 1em;
+	margin: 0.25em;
+}
+main{
+	font-size: 1em;
+	color: #555;
+	margin: 2.5%;
+	line-height: 1.8em;
+    padding: 1em;
+}
+h2 {
+  font-family: 'Stint Ultra Expanded', Georgia, serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #7A0002;
+}
+p{
+  font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+}
+main div{
+	display: flex;
+}
+main img {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: .5em;
+}
+aside { 
+    font-size: 1em;
+	margin: 2.5%;
+	line-height: 0.7em;
+    padding: 1em;
+	font-family: 'Stint Ultra Expanded', Georgia, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #7A0002;
+}
+section{
+	border: double 4px #783F27;
+    border-radius: 25px;
+}
+aside img{
+	width: 300px;
+	height: 200px;
+}
+main p{
+	font-style: italic;
+}
+footer {
+  color: #EADDC4;
+  text-align: center;
+  font-size: .8em;
+  padding: 1em;
+}
+#container{
+	background-color: #f3f3f5;
+}
+section{
+	margin:  4em 2.5%;
+    padding: 0.5em;
+}
+aside img{
+	display: none;
+}
+aside{
+	border-top: solid 3px #7A0002;
+}
+aside p{
+	   line-height: 0.8em;
+   }
+   input[id=name]{
+	   width: 80%;
+	   font-size: 0.6em;
+	   font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+   }
+   input[id=email]{
+	   width: 80%;
+	   font-size: 0.6em;
+	   font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+   }
+   textarea[id=write]{
+	   width: 80%;
+	   height: 60px;
+	   font-size: 0.5em;
+	   font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+   }
+   input[type=submit]{
+	   display: block;
+	   width: 80px;
+	   height: 30px;
+	   margin-top: 1.8em;
+	   font-size: 0.8em;
+	   font-weight: bold;
+	   font-family: 'Akaya Telivigala', cursive;
+	   background-color: #783F27;
+	   color: white;
+	   border-radius: 1em;
+	   box-shadow: 5px 5px 9px black;
+   }
+   #send{
+	cursor: pointer;
+   }
+@media screen and (min-width:550px){
+	nav ul li{
+		flex: none;
+	}
+	nav ul{
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width:700px){
+	input[id=name]{
+	   width: 50%;
+	}
+	input[id=email]{
+	   width: 50%;
+	}
+	textarea[id=write]{
+	   width: 50%;
+	}
+}
+@media screen and (min-width:940px){
+	#container{
+	display: grid;
+	grid-template-rows: auto auto 5em;
+	grid-template-columns: minmax(25em, 1fr);
+	grid-template-areas: 
+	   "banner"
+	   "section"
+	   "footer";
+	   max-width: 1200px;
+	   margin: 0 auto;
+	   position: relative;
+    }
+	header {
+    grid-area: banner;
+    }
+	section{
+		grid-area: section;
+	}
+	footer {
+    grid-area: footer;
+    }
+	section{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: minmax(25em, 1fr) 25em;
+		grid-template-areas:
+		   "main aside";
+		margin: 4em;
+		padding: 1em;
+	}
+	main{
+		grid-area: main;
+	}
+	aside{
+		grid-area: aside;
+	}
+	aside img{
+		display: block;
+	    width: 300px;
+	    height: 200px;
+		margin-bottom: 1.5em;
+   }
+   aside p{
+	   line-height: 0.8em;
+   }
+   input[id=name]{
+	   width: 80%;
+	   font-size: 0.6em;
+	   font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+   }
+   input[id=email]{
+	   width: 80%;
+	   font-size: 0.6em;
+	   font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+   }
+   textarea[id=write]{
+	   width: 80%;
+	   height: 60px;
+	   font-size: 0.5em;
+	   font-family: 'Stint Ultra Expanded', Verdana, sans-serif;
+   }
+   input[type=submit]{
+	   display: block;
+	   width: 80px;
+	   height: 30px;
+	   margin-top: 1.8em;
+	   font-size: 0.8em;
+	   font-weight: bold;
+	   font-family: 'Akaya Telivigala', cursive;
+	   background-color: #783F27;
+	   color: white;
+	   border-radius: 1em;
+	   box-shadow: 5px 5px 9px black;
+   }
+   aside{
+	border-top: 0;
+}
+} 

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mom's Kitchen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+<link href="css/order.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="container">
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="">Order</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+    </ul>
+  </nav>  
+  <img src="images/logo.jpg" alt="Logo">
+</header>
+
+<main>
+  <h2>Order Please...!</h2>
+  <form method="post" action="order">
+	<h3><label for="firstname">Your Name</label></h3>
+	<p id="form"><label for="firstname">First Name</label></p>
+	<input type="text" name="firstname" id="firstname" required>
+	<p id="form"><label for="lastname">Last Name</label></p>
+	<input type="text" name="lastname" id="lastname" required>
+	
+	<h3><label for="email">Your E-mail</label></h3>
+	<input type="email" name="email" id="email" required>
+	<p id="form">example@example.com</p>
+	
+	<h3><label for="number">Phone Number</label></h3>
+	<tr>
+	   <td><input type="tel" name="areacode" id="number" required></td>
+	   <td><input type="tel" name="number" id="number1" required></td>
+	</tr>
+	
+	<h3><label for="address">Your Address(for delivery only)</label></h3>
+	<p id="form"><label for="address">Street Address</label></p>
+	<input type="text" name="address" id="address" required>
+	<p id="form"><label for="address2">Street Address Line 2</label></p>
+	<input type="text" name="address2" id="address2">
+	<p id="form" ><label for="city">City</label></p>
+	<input type="text" name="city" id="city" required>
+	<p id="form"><label for="state">State/Province</label></p>
+	<input type="text" name="state" id="state" required>
+	<p id="form"><label for="zipcode">Postal/Zip Code</label></p>
+	<input type="text" name="zipcode" id="zipcode" required>
+	
+	<h3><label for="date">Date(order needed)</label></h3>
+	<input type="date" name="date" id="date" required>
+	<p id="form">at least a 72 hour notice</p>
+	
+	<h3><label for="time">Time(order needed)</label></h3>
+	<input type="time" name="time" id="time" required>
+	
+	<h3><label for="details">Give a detailed description of your order</label></h3>
+	<textarea name="details" placeholder="Type here..." id="details"></textarea>
+	<p id="form">Frosting type? Flavor? Etc.</p>
+	
+	<h3><label for="serve">Serving</label></h3>
+	<input type="number" name="serve" id="serve" placeholder="Ex: 5" required>
+	<p id="form" >Number of servings, etc</p>
+	
+	<p id="note">Please place orders at least 72 hours in advance. There will be a $25 charge for rush or last minute orders. 
+	Please include if you will need pick-up or delivery (there is a delivery fee). When placing an order, there will 
+	be a non-refundable deposit required (50%) or payment in full in order to secure your order and date requested. 
+	If payment is not made within 24 hours from the time your invoice is sent, your order WILL be cancelled ans will 
+    not be reissued. Your order is not complete until payment has been made ans cleared. Once your order has been 
+    confirmed, there will be no charges. So be sure to include as much detail as possible. **Delivery Fee includes 
+    delivery to your home, job or meet-up location (anything other than you picking up):$5- within a 5-10 mile radius; 
+    $10-$25- anything more than 10 miles. No deliveries or pick-ups will be made after 7pm. ***We reserve the right 
+    to refuse an order. ****To properly accommodate all orders appropriately, please pick up no earlier than your 
+    allotted/scheduled time. Picking up early may result in a inconvenience/rush order fee.</p>
+	
+	<input type="submit" value="Order Now" id="order">
+	
+	
+  </form>
+</main>
+<footer>
+  <p>All content copyright &copy; 2022, Mom's Kitchen.</p>
+</footer>
+</div>
+</body>
+</html>

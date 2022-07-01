@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+<servlet>
+<servlet-name>servlet1</servlet-name>
+<servlet-class>com.app.Order</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>servlet1</servlet-name>
+<url-pattern>/order</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>servlet2</servlet-name>
+<servlet-class>com.app.Contact</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>servlet2</servlet-name>
+<url-pattern>/contact</url-pattern>
+</servlet-mapping>
+
+</web-app>

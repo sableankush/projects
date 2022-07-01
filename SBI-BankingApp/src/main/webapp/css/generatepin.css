@@ -1,0 +1,264 @@
+@charset "ISO-8859-1";
+html{
+	box-sizing: border-box;
+}
+
+*{
+	box-sizing: inherit;
+}
+
+body{
+	font-family: Verdana, Arial, serif;
+	font-size: 100%;
+	background-color: white;
+	margin: 1px;
+}
+
+#container{
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0.1px 0.1px 3px black;
+}
+
+.head{
+    height: 100px;
+    background-color: rgb(185, 210, 236); 
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    margin-right: 150px;
+    margin-left: 50px;
+}
+
+#heading{
+    font-size: 40px;
+    font-family: 'Akaya Telivigala', cursive;
+    font-weight: bold;
+}
+
+.menu{
+    height: 30px;
+    background-color: rgb(55, 120, 201); 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu p{
+    font-size: 16px;
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+    font-weight: bold;
+    margin-right: 60px;
+}
+
+.menu p a{
+    color: white;
+    text-decoration: none;
+}
+
+.separator{
+    height: 3px;
+    background-color: rgb(185, 210, 236);
+}
+
+.account{
+    height: 600px;
+    background-color: white;  
+    display: flex;
+}
+
+.sidemenu{
+    background-color: rgb(55, 120, 201);
+    flex: 1 1 auto;
+    flex-grow: 1;
+}
+
+.home{
+    flex: 1 1 auto;
+    flex-grow: 10;
+}
+
+.decor{
+    height: 450px;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgb(237, 240, 243); 
+    box-shadow: 2px 2px 9px rgb(55, 120, 201); 
+}
+
+.mainform{
+    height: 580px;
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.welcome{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.welcome h{
+    font-size: 30px;
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+    font-weight: bold;
+}
+
+.button{
+    height: 100px;   
+}
+
+.open{
+    text-align: center;
+}
+
+.design{
+    width: 200px;
+    height: 50px;
+    border: none;
+    box-shadow: 2px 2px 9px rgb(55, 120, 201);
+    border-radius: 25px;
+    font-size: 15px;
+    background-color: rgb(55, 120, 201);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+    font-weight: bold;
+    color: white;
+}
+
+.footer{
+    height: 3px;
+    background-color: rgb(185, 210, 236);
+}
+
+.foothead{
+    font-size: 14px;
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(55, 120, 201);
+}
+
+.form{
+    font-size: 18px;
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+input[class="indcor"]{
+	width: 350px;
+	height: 30px;
+	font-size: 16px;
+	font-family: 'Stint Ultra Expanded', Georgia, serif;
+    color: black;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 1;
+    margin-left: 30px;
+}
+
+#create{
+    width: 150px;
+    height: 40px;
+    border: none;
+    box-shadow: 2px 2px 9px rgb(55, 120, 201);
+    border-radius: 25px;
+    font-size: 15px;
+    background-color: rgb(55, 120, 201);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.sidemenu img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+input[type=file]{
+    display: none;
+}
+
+.click{
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[class="pic"]{
+    width: 80px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin: 5px auto;
+}
+
+#pphoto{
+    text-align: center;
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+    font-weight: bold;
+    color: white;
+}
+
+.link{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.link a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.message{
+    width: 700px;
+
+}
+
+.message h2{
+    margin-top: 50px;
+    margin-left: 30px;
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+}
+
+.message p{
+    margin-left: 30px;
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+    font-weight: bold;
+    font-size: 14px;
+} 
+
+
